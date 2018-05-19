@@ -1,51 +1,142 @@
-.box {
-	align-items: center;
-  background-color: black;
-  color: seashell;
+html {
   font-family: Helvetica;
   font-size: 22px;
-  justify-content: center;
-	opacity: 0.9;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
 }
 
-/*HEADER*/
+body {
+  text-align: center;
+  margin: 0;
+}
 
 header {
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   height: 69px;
-  border-bottom: 1px solid seashell;
+  position: fixed;
   z-index: 1;
+  background-color: black;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.logo {
+footer {
+  text-align: left;
+  padding-left: 20px;
+}
+
+nav {
+  text-align: right;
   flex-grow: 1;
 }
 
-.logo img {
-  display: flex;
-  padding: 10px;
-  height: 50px;
-  width: auto;
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  text-decoration: underline;
 }
 
-/*NAV*/
-
-.nav {
-  flex-grow: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.nav-item {
-  padding: 10px;
-}
-
-.nav-link {
+a {
   color: seashell;
+}
+
+div {
+  display: block;
+}
+
+h2, h3, h4 {
+  display: block;
+  margin: 0px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+  align-item: left;
+}
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 5px;
+}
+
+.item img {
+  height: 200px;
+  display: block;
+  margin: 10px;
+}
+
+.location {
+  opacity: 1;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mission {
+  height: 700px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  padding-top: 70px;
+}
+
+#store {
+  height: 700px;
+  width: 1000px;
+  padding-top: 70px;
+  margin: auto;
+}
+
+#mission .content {
+  background-color: black;
+  width: 100%;
+  margin: auto;
+}
+
+#locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+}
+
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+
+#contact {
+  height: 200px;
 }
